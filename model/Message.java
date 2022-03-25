@@ -1,3 +1,5 @@
+package model;
+
 import java.sql.Time;
 
 public class Message {
@@ -18,7 +20,7 @@ public class Message {
         return sender;
     }
 
-    public User getContent() {
+    public String getContent() {
         return content;
     }
 
