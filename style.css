@@ -1,13 +1,31 @@
 header {
-  min-height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 60px;
   background-color: cadetblue;
   color: white;
   text-align: center;
 }
 
 nav {
-  min-height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: violet;
   margin: 10px;
+}
+
+.nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 main {
@@ -22,6 +40,13 @@ aside {
 }
 
 footer {
+  width: 100%;
   margin: 10px;
   text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
 }
