@@ -10,15 +10,8 @@ nav {
   margin: 10px;
 }
 
-section {
-  min-height: 200px;
-  background-color: cornflowerblue;
-  margin: 10px;
-}
-
-article {
-  min-height: 200px;
-  background-color: cornsilk;
+main {
+  min-height: 50px;
   margin: 10px;
 }
 
@@ -31,9 +24,4 @@ aside {
 footer {
   margin: 10px;
   text-align: right;
-}
-
-.paginate_button {
-  padding: 10px;
-  border: 1px solid #dddddd;
 }
