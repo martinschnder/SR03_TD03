@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fil de discussion</title>
+    <link href="../css/chat.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+      function write() {
+        alert("eco");
+      }
+    </script>
+</head>
+<body>
+    <div id="page"></div>
+        <header class="header">
+            <h1>Application</h1>
+        </header>
+        <nav class="nav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+        <div class="flex-container">
+            <aside class="aside">
+                <p>Aside</p>
+            </aside>
+            <main class="main">
+                <h1>Chat messages</h1>
+                <div class="container">
+                  <p>Hello. How are you today?</p>
+                  <span class="time-right">11:00</span>
+                </div>
+                
+                <div class="container darker">
+                  <p>Hey! I'm fine. Thanks for asking!</p>
+                  <span class="time-left">11:01</span>
+                </div>
+                
+                <div class="container">
+                  <p>Sweet! So, what do you wanna do today?</p>
+                  <span class="time-right">11:02</span>
+                </div>
+                
+                <div class="container darker">
+                  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                  <span class="time-left">11:05</span>
+                </div>
+                <input class="write-button" onclick="write()">Ecrire</button>
+                <!-- <form method="get" class="form" novalidate>
+                  <input type="text" name="text" id="text">
+                </form> -->
+
+            </main>
+        </div>
+        <footer class="footer">
+            <p>SR03 - Application de chat 2022 - Martin Schneider et Océane Bordeau</p>
+        </footer>
+    </div>
+</body>

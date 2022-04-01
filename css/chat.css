@@ -1,0 +1,54 @@
+@import url("../template/template.css");
+
+.container {
+  border: 2px solid #9CB7D0;
+  background-color: #BDD5EC;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.darker {
+  border-color: #6C94BB;
+  background-color: #A3BCD5;
+}
+
+.time-right {
+  float: right;
+  color: #4F6E8B;
+}
+
+.time-left {
+  float: left;
+  color: #3F5B76;
+}
+
+.write-button {
+  border: 2px solid #ffc857;
+  background-color: #ffc857;
+  float: right;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.write-button:hover {
+  background-color: #2e4052;
+  border-color: #2e4052;
+  color: white;
+}
+
+.form{
+  display: none;
+}
