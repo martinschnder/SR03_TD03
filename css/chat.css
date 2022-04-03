@@ -1,8 +1,8 @@
 @import url("../template/template.css");
 
 .container {
-  border: 2px solid #9CB7D0;
-  background-color: #BDD5EC;
+  border: 2px solid #9cb7d0;
+  background-color: #bdd5ec;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
@@ -15,18 +15,18 @@
 }
 
 .darker {
-  border-color: #6C94BB;
-  background-color: #A3BCD5;
+  border-color: #6c94bb;
+  background-color: #a3bcd5;
 }
 
 .time-right {
   float: right;
-  color: #4F6E8B;
+  color: #4f6e8b;
 }
 
 .time-left {
   float: left;
-  color: #3F5B76;
+  color: #3f5b76;
 }
 
 .write-button {
@@ -49,6 +49,47 @@
   color: white;
 }
 
-.form{
+.send-button {
+  border: 2px solid #ffc857;
+  background-color: green;
+  float: right;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-button {
+  border: 2px solid #ffc857;
+  background-color: red;
+  float: right;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  display: none;
+  width: 60%;
+  height: 50px;
+  border: 2px solid #9cb7d0;
+  border-radius: 5px;
+  vertical-align: baseline;
+}
+
+.button-container {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: 10px;
   display: none;
 }
