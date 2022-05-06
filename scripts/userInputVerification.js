@@ -44,16 +44,15 @@ form.addEventListener('submit', function (event){
 
   const mail = document.getElementById("mail");
   const password = document.getElementById("password");
-  const errorMail = document.getElementById("errorMail");
-  const errorPw = document.getElementById("errorPw");
 
   if (!isValidEmail(mail)) {
-    errorMail.innerHTML = "Veuillez saisir une adresse mail valide.";
+    mail.placeholder = "Email ou mot de passe incorrect";
+    mail.style.outline="3px solid red";
     event.preventDefault();
   }
 
   if (!isValidPassword(password)) {
-    errorPw.innerHTML = "Votre mot de passe doit contenir au moins une minuscule, une majuscule, un chiffre et un caractère spécial.";
+    password.style.outline="3px solid red";
     event.preventDefault();
   }
 });

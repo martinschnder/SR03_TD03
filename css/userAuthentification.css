@@ -1,55 +1,87 @@
 body {
-  font: 1em sans-serif;
-  padding: 0;
-  margin: 0;
+  background-color: #ffc857;
+  flex: 1;
+}
+.container {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  margin-top: -180px;
+  left: 50%;
+  margin-left: -260px;
+  background-color: #2e4052;
+  padding: 16px;
 }
 
-form {
-  max-width: 200px;
+/* Full-width input fields */
+input[type="email"],
+input[type="password"] {
+  width: 94%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #fff;
 }
 
-p * {
-  display: block;
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #fff;
+  outline: auto;
 }
 
-input[type="email"] {
-  -webkit-appearance: none;
-
-  width: 100%;
-  border: 1px solid #333;
-  margin: 0;
-
-  font-family: inherit;
-  font-size: 90%;
-
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+hr {
+  border: 1px solid #fff;
+  margin-bottom: 25px;
 }
 
-/* Voici notre composition pour les champs invalides */
-input:invalid {
-  border-color: #900;
-  background-color: #fdd;
-}
-
-input:focus:invalid {
-  outline: none;
-}
-
-/* Voici la mise en forme pour les erreurs */
-.error {
-  width: 100%;
-  padding: 0;
-
-  font-size: 80%;
+/* Set a style for all buttons */
+button {
+  background-color: #6a8473;
   color: white;
-  background-color: #900;
-  border-radius: 0 0 5px 5px;
-
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.error.active {
-  padding: 0.3em;
+button:hover {
+  filter: brightness(150%);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #904e55;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.error {
+  border-width: 2px;
+  border-color: red;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
 }

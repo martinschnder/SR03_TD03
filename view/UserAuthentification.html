@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Application de chat</title>
-    <!-- <link href="./authStyle.css" rel="stylesheet" /> -->
-  </head>
 
-  <body>
-    <header class="header">
-      <h1>Application</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Application de chat</title>
+  <link href="../css/userAuthentification.css" rel="stylesheet" />
+</head>
 
-    <body>
-      <h2>Authentification requise</h2>
-      <form novalidate action="./ChatPage.html">
-        <p>
-          <label for="mail">
-            <span>Veuillez saisir une adresse e-mail :</span>
-            <input type="email" id="mail" name="mail" />
-            <span id="errorMail" aria-live="polite"></span>
-          </label>
-        </p>
+<body>
+  <div class="container">
+  <h2 style="color: #fff;">Authentification requise</h2>
+  <form novalidate action="./ChatPage.html">
+    <p>
+      <label for="mail">
+        <span style="color: #fff;">Veuillez saisir votre adresse e-mail :</span>
+        <input type="email" id="mail" name="mail" />  
+      </label>
+    </p>
 
-        <p>
-          <label for="password">
-            <span>Veuillez saisir un mot de passe :</span>
-            <input type="password" id="password" name="password" />
-            <span id="errorPw" aria-live="polite"></span>
-          </label>
-        </p>
+    <p>
+      <label for="password">
+        <span style="color: #fff;">Veuillez saisir votre mot de passe :</span>
+        <input type="password" id="password" name="password" />
+      </label>
+    </p>
 
-        <p><input type="Submit" value="Ok" /></p>
-      </form>
-    </body>
-    <footer class="footer"></footer>
-    <script
-      type="text/javascript"
-      src="../scripts/userInputVerification.js"
-    ></script>
-  </body>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign in</button>
+    </div>
+  </form>
+</div>
+</body>
+<footer class="footer"></footer>
+<script type="text/javascript" src="../scripts/userInputVerification.js"></script>
+</body>
+
 </html>
