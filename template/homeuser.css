@@ -1,90 +1,18 @@
 @import url("template.css");
 
-.form-text {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.input {
-	display: flex;
-	position: relative;
-	padding-top: 10px;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.input-label {
-	color: #0248c2;
-	position: absolute;
-	top: 0px;
-	transition: 0.25s ease;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-.label {
-	color: #0248c2;
-	position: relative;
-    margin-top: 15px;
-    font-size: 18px;
-    margin-left: 5%;
-}
-
-.input-field {
-    width: 100%;
-	border: 0;
-	z-index: 1;
-	background-color: transparent;
-	border-bottom: 2px solid #efefef; 
-	font: inherit;
-	font-size: 16px;
-	padding: 10px 0;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    color : var(--primary-color);
-}
-
-.action {
-	margin-top: 20px;
-}
-
-.action-button {
-    border : 0;
-    background-color: #0248c2;
-    color: whitesmoke;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 80%;
-    margin: 10%;
-    margin-top: 5px;
-    margin-bottom: 25px;
-  }
-  
-  .action-button:hover {
-    background-color: var(--secondary-color);
-    color: whitesmoke;
-  }
-
-  .table {
+.table {
     align-items: center;
       width: 80%;
     background-color: none;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 40px;
+    margin: 10%;
+    margin-top: 5%;
   }
   
   .table-header {
       display:flex;
       width:100%;
       background:var(--primary-color);
-      padding:0 0;
+      padding:10px 0;
     margin-bottom: 15px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -102,10 +30,18 @@
     color: whitesmoke
   }
   
+  .table-row:nth-of-type(odd) .table-data.modifier {
+    background-image: url('edit_white.png');
+  }
+  
   .table-row:nth-of-type(odd) .table-data.supprimer {
     background-image: url('delete_white.png');
   }
-
+  
+  .table-row:nth-of-type(odd) .table-data.voir {
+    background-image: url('see_white.png');
+  }
+  
   .table-row:last-child {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -121,6 +57,18 @@
       text-align:center;
   }
   
+  .table-data.modifier {
+    background-image: url('edit.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .table-data.modifier a {
+    color: transparent;
+    text-decoration: none;
+  }
+  
   .table-data.supprimer {
     background-image: url('delete.png');
     background-size: 20px;
@@ -128,23 +76,19 @@
     background-position: center;
   }
   
-  .table-data.ajouter a {
+  .table-data.supprimer a {
     color: transparent;
     text-decoration: none;
   }
-
-  .table-data.ajouter {
-    background-image: url('add.png');
+  
+  .table-data.voir {
+    background-image: url('see.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
   }
-    
-  .table-row:nth-of-type(odd) .table-data.ajouter {
-    background-image: url('add_white.png');
-  }
   
-  .table-data.supprimer a {
+  .table-data.voir a {
     color: transparent;
     text-decoration: none;
   }
@@ -155,10 +99,10 @@
     font-size: 18px;
     padding: 5px;
   }
-
-  .search {
-    margin-top: 0;
-    margin-bottom: 10px;
+  
+  input[type="text"] {
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
     height: 50px;
     border: 2px solid var(--secondary-color);
