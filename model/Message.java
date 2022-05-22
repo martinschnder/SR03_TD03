@@ -4,20 +4,20 @@ import java.sql.Time;
 
 public class Message {
 
-    private User sender;
+    private Integer user;
     private String content;
     private Time hour;
-    private Channel channel;
+    private Integer channel;
 
-    public Message(User sender, String content, Time hour, Channel channel) {
+    public Message(Integer user, String content, Time hour, Integer channel) {
         setChannel(channel);
         setContent(content);
         setHour(hour);
-        setSender(sender);
+        setUser(user);
     }
 
-    public User getUser() {
-        return sender;
+    public Integer getUser() {
+        return user;
     }
 
     public String getContent() {
@@ -28,11 +28,11 @@ public class Message {
         return hour;
     }
 
-    public Channel getChannel() {
+    public Integer getChannel() {
         return channel;
     }
 
-    public void setChannel(Channel channel) {
+    public void setChannel(Integer channel) {
         this.channel = channel;
     }
 
@@ -44,7 +44,7 @@ public class Message {
         this.hour = hour;
     }
 
-    public void setSender(User sender) {
-        this.sender = sender;
+    public void setUser(Integer user) {
+        this.user = user;
     }
 }

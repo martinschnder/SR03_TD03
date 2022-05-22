@@ -2,7 +2,6 @@ package model;
 
 import java.sql.Date;
 import java.sql.Time;
-import java.util.ArrayList;
 
 public class Channel {
 
@@ -11,20 +10,16 @@ public class Channel {
     private String description;
     private Date date;
     private Time hour;
-    private Integer duration;
-    private User owner;
-    private ArrayList<User> guests;
+    private Date duration;
+    private Integer owner;
 
-    public Channel(Integer id, String title, String description, Date date, Time hour, Integer duration, User owner,
-            ArrayList<User> guests) {
+    public Channel(Integer id, String title, String description, Date date, Time hour, Date duration, Integer owner) {
         setDate(date);
         setDescription(description);
         setDuration(duration);
-        setGuests(guests);
         setHour(hour);
         setId(id);
         setOwner(owner);
-        setGuests(guests);
     }
 
     public Date getDate() {
@@ -35,12 +30,8 @@ public class Channel {
         return description;
     }
 
-    public Integer getDuration() {
+    public Date getDuration() {
         return duration;
-    }
-
-    public ArrayList<User> getGuests() {
-        return guests;
     }
 
     public Time getHour() {
@@ -51,7 +42,7 @@ public class Channel {
         return id;
     }
 
-    public User getOwner() {
+    public Integer getOwner() {
         return owner;
     }
 
@@ -67,12 +58,8 @@ public class Channel {
         this.description = description;
     }
 
-    public void setDuration(Integer duration) {
+    public void setDuration(Date duration) {
         this.duration = duration;
-    }
-
-    public void setGuests(ArrayList<User> guests) {
-        this.guests = guests;
     }
 
     public void setHour(Time hour) {
@@ -83,7 +70,7 @@ public class Channel {
         this.id = id;
     }
 
-    public void setOwner(User owner) {
+    public void setOwner(Integer owner) {
         this.owner = owner;
     }
 
@@ -91,15 +78,11 @@ public class Channel {
         this.title = title;
     }
 
-    public void addUser(User newuser) {
-        getGuests().add(newuser);
+    public void addUser(Integer newuser) {
+
     }
 
-    public void removeUser(User user) {
-        if (getGuests().contains(user)) {
-            getGuests().remove(user);
-        } else {
-            System.out.println("L'utilisateur n'existe pas");
-        }
+    public void removeUser(Integer user) {
+
     }
 }

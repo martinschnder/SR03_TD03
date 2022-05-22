@@ -1,11 +1,12 @@
-@import url("../template/template.css");
+@import url("template.css");
 
 .container {
-  border: 2px solid #9cb7d0;
-  background-color: #bdd5ec;
+  background-color: var(--secondary-color);
   border-radius: 5px;
   padding: 10px;
-  margin: 10px 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: whitesmoke
 }
 
 .container::after {
@@ -14,60 +15,64 @@
   display: table;
 }
 
-.darker {
-  border-color: #6c94bb;
-  background-color: #a3bcd5;
+.container:nth-of-type(odd) {
+  background-color: var(--primary-color);
 }
 
-.time-right {
+.messages-container {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.time {
   float: right;
-  color: #4f6e8b;
-}
-
-.time-left {
-  float: left;
-  color: #3f5b76;
+  color: whitesmoke;
 }
 
 .write-button {
-  border: 2px solid #ffc857;
-  background-color: #ffc857;
+  border : 0;
+  background-color: #0248c2;
   float: right;
-  color: black;
+  color: whitesmoke;
   padding: 16px 32px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
+  margin-top: 5%;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .write-button:hover {
-  background-color: #2e4052;
-  border-color: #2e4052;
-  color: white;
+  background-color: var(--secondary-color);
+  color: whitesmoke;
 }
 
 .send-button {
-  border: 2px solid #ffc857;
-  background-color: green;
+  border: 0;
+  background-color: var(--primary-color);
   float: right;
-  color: black;
+  color: whitesmoke;
   padding: 16px 32px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 10px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.send-button:hover {
+  background-color: #0248c2;
 }
 
 .close-button {
-  border: 2px solid #ffc857;
-  background-color: red;
+  border: 0;
+  background-color: var(--secondary-color);
   float: right;
-  color: black;
+  color: whitesmoke;
   padding: 16px 32px;
   text-align: center;
   font-size: 16px;
@@ -77,13 +82,19 @@
   border-radius: 5px;
 }
 
+.close-button:hover {
+  background-color: #0248c2;
+}
+
 input[type="text"] {
+  margin-top: 5%;
   display: none;
-  width: 60%;
+  width: 100%;
   height: 50px;
-  border: 2px solid #9cb7d0;
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   vertical-align: baseline;
+  padding: 15px;
 }
 
 .button-container {
@@ -92,4 +103,10 @@ input[type="text"] {
   position: relative;
   top: 10px;
   display: none;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin : 5%;
+  }
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application de chat</title>
+    <link href="chat.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="page"></div>
+    <div class="flex-container">
+        <aside class="aside">
+            <div class="aside-header">
+                <h3>MATTERLEAST</h3>
+            </div>
+            <div class="content">
+                <div class="channel">
+                    <div class="fix-nav">
+                        <h4><a href="#">MES CHATS</a></h4>
+                    </div>
+                    <div class="fix-nav">
+                        <h4><a href="#">TOUS LES CHATS</a></h4>
+                    </div>
+                    <div class="nav">
+                        <a href="#">channel 1</a>
+                    </div>
+                    <div class="nav">
+                        <a href="#">channel 2</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="sidebar-footer">
+                    <div class='user_infos_container'>
+                        <h4>Martin Schneider</h4>
+                        <h5>martin.schneider2001@gmail.com</h5>
+                    </div>
+            </a>
+    </div>
+    </aside>
+    <main class="main">
+        <header>
+            <h1>Booby Chat</h1>
+        </header>
+        <div class="messages-container">
+            <div class="container">
+                <p>Hello. How are you today?</p>
+                <span class="time">11:00</span>
+            </div>
+
+            <div class="container">
+                <p>Hey! I'm fine. Thanks for asking!</p>
+                <span class="time">11:01</span>
+            </div>
+
+            <div class="container">
+                <p>Sweet! So, what do you wanna do today?</p>
+                <span class="time">11:02</span>
+            </div>
+
+            <div class="container">
+                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                <span class="time">11:05</span>
+            </div>
+            <form method="get" id="userForm" class="form_undisplay" novalidate>
+                <input type="text" name="text" id="text" placeholder="Votre message...">
+            </form>
+            <button class="write-button" id="write-button">Ecrire</button>
+            <div class="button-container">
+                <button class="send-button" id="send-button">Envoyer</button>
+                <button class="close-button" id="close-button">Fermer</button>
+            </div>
+            <script type="text/javascript" src="../scripts/buttonHandler.js"></script>
+        </div>
+    </main>
+    </div>
+    </div>
+</body>
